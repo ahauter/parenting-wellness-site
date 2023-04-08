@@ -1,0 +1,25 @@
+{
+    "Quality Sleep": {
+        "description": "Sleep is a vital part of mental and emotional health. Especially for young children, quality sleep is essential for healthy developement.",
+        "suggestions": [
+            "Create a nightly wind-down routine that helps you relax and prepare for sleep.",
+            "Avoid caffeine six hours before bedtime.",
+            "Leave the bedroom and do something relaxing if unable to fall asleep within 30 minutes of laying in bed.",
+            "Reduce use of electronics one hour before bedtime.",
+            "Try white noise or a fan to help you sleep.",
+            "Sleep in a dark, cool room."
+        ]
+    },
+    "Proper Nutrition": {
+        "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
+        "suggestions": [
+            "Use smaller bowls and spoons when eating foods high in fat and sugar.",
+            "Consume the skin of fruits and vegetables for added fiber.",
+            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom.",
+            "Make extra food for leftovers",
+            "Pack a nutritious lunch for work or school.",
+            "Limit alcohol and drug consumtion.",
+            "Eat fresh fruits as snacks instead of processed foods."
+        ]
+    }
+}
