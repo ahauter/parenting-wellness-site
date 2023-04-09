@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import SuggestionsSelect from './components/suggestionsSelect';
+import data from './data.json';
+import { useState } from 'react';
 
 function App() {
+  const [selected, setSelected] = useState([]);
+  const onSelect = (suggestion) => {
+    if (selected.includes(suggestion)) {
+      setSelected(selected.filter((s) => s !== suggestion));
+    } else {
+      setSelected([...selected, suggestion]);
+    }
+  };
+
+  const suggestions = data['Proper Nutrition'].suggestions;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SuggestionsSelect
+        suggestions={suggestions}
+        selectedSuggestions={selected}
+        onSelect={onSelect}
+      />
     </div>
   );
 }
