@@ -5,6 +5,7 @@ import data from './data.json';
 import { useState } from 'react';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
   const [selected, setSelected] = useState([]);
   const onSelect = (suggestion) => {
     if (selected.includes(suggestion)) {
@@ -17,7 +18,7 @@ function App() {
   const suggestions = data['Proper Nutrition'].suggestions;
 
   return (
-    <div className="App">
+    <div className="App" data-theme={darkMode ? 'dark' : 'light'}>
       <SuggestionsSelect
         suggestions={suggestions}
         selectedSuggestions={selected}

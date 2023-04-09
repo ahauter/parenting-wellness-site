@@ -1,7 +1,33 @@
+/* Define the theme */
+:root {
+  --background-color: aliceblue;
+  --color-primary: #0277BD;
+  --color-secondary: #29B6F6;
+  --color-tertiary: #B2EBF2;
+  --text-color: #000;
+  --secondary-text-color: #0D47A1;
+  --text-contrast-color: #fff;
+  --secondary-text-contrast-color: #90CAF9;
+}
+
+[data-theme="dark"] {
+  --background-color: #303030;
+  --color-primary: #01579B;
+  --color-secondary: #0288D1;
+  --color-tertiary: #80DEEA;
+  --text-contrast-color: #000;
+  --secondary-text-contrast-color: #0D47A1;
+  --text-color: #fff;
+  --secondary-text-color: #90CAF9;
+}
+
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100vw;
 }
