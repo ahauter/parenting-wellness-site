@@ -1,0 +1,39 @@
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border-radius: 40%;
+    background-color: var(--background-color-dark);
+    cursor: pointer;
+}
+
+.toggle_text {
+    font: var(--font-3-bold);
+    color: var(--text-color);
+    padding: 0.5rem;
+}
+
+.toggle_thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.toggle_thumb_right {
+    transform: translate(26px, 0);
+}
+
+.toggle_icon {
+    color: var(--background-color-dark);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}

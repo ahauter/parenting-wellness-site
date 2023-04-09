@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import SuggestionsSelect from './components/suggestionsSelect';
+import DarkModeToggle from './components/darkModeToggle';
 import data from './data.json';
 import { useState } from 'react';
 
@@ -19,11 +20,8 @@ function App() {
 
   return (
     <div className="App" data-theme={darkMode ? 'dark' : 'light'}>
-      <SuggestionsSelect
-        suggestions={suggestions}
-        selectedSuggestions={selected}
-        onSelect={onSelect}
-      />
+      <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+
     </div>
   );
 }
