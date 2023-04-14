@@ -3,19 +3,39 @@
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: #fff;
+    background-color: var(--background-color-secondary);
     border: 1px solid #ccc;
     border-top: none;
-    max-height: 200px;
     overflow-y: auto;
+    border-radius: 50px;
+    text-align: left;
+}
+
+.suggestionCheckbox {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.5rem;
+    border-color: var(--color-primary);
+}
+
+.suggestionCheckbox:checked {
+    background-color: var(--color-secondary) !important;
+    border-color: var(--color-primary);
 }
 
 .suggestion {
     cursor: pointer;
-    padding: 0.5rem
+    padding: 0.5rem;
+    font: var(--font-2);
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+.suggestion:hover {
+    background-color: var(--color-tertiary);
 }
 
 .selected {
-    background-color: #ddd;
+    background-color: var(--color-tertiary);
     color: #000;
 }

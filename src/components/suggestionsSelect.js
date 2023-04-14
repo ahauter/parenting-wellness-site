@@ -14,6 +14,12 @@ const SuggestionsSelect = ({ suggestions, selectedSuggestions, onSelect }) => {
                     className={`${styles.suggestion} ${selectedSuggestions.includes(suggestion) ? styles.selected : ''}`}
                     onClick={() => handleSelect(suggestion)}
                 >
+                    <input type="checkbox"
+                        className={styles.suggestionCheckbox}
+                        checked={selectedSuggestions.includes(suggestion)}
+                        readOnly
+                    />
+                    <span className={styles.checkMark}></span>
                     {suggestion}
                 </div>
             ))}
