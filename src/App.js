@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App" data-theme={darkMode ? 'dark' : 'light'}>
       <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-
+      <SuggestionsSelect suggestions={suggestions} selectedSuggestions={selected} onSelect={onSelect} />
     </div>
   );
 }

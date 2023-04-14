@@ -7,6 +7,7 @@
   --font-3-bold: 400 1.5rem var(--font-family);
   --font-3: 200 1.5rem var(--font-family);
   --background-color: aliceblue;
+  --background-color-secondary: #fff;
   --background-color-dark: #303030;
   --color-primary: #0277BD;
   --color-secondary: #29B6F6;
@@ -19,6 +20,7 @@
 
 [data-theme="dark"] {
   --background-color: #303030;
+  --background-color-secondary: #424242;
   --background-color-dark: aliceblue;
   --color-primary: #01579B;
   --color-secondary: #0288D1;
