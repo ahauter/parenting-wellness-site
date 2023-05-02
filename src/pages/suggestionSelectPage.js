@@ -8,7 +8,7 @@ const SuggestionSelectPage = ({ onBack, title, suggestions, selectedSuggestions,
     return <>
         <div
             class={styles.backButton}
-            onClick={onBack}
+            onClick={() => onBack()}
         >
             <FontAwesomeIcon icon={faArrowLeftLong} /> Back
         </div>
