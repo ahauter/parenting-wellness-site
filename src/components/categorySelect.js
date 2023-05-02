@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styles from './categorySelect.module.css'
 export default function CategorySelect({ categories, onSelect }) {
     const handleSelect = (category) => {
         onSelect(category);
@@ -10,7 +10,7 @@ export default function CategorySelect({ categories, onSelect }) {
             {categories.map((category) => (
                 <div
                     key={category}
-                    className="category"
+                    className={styles.category}
                     onClick={() => handleSelect(category)}
                 >
                     {category}
