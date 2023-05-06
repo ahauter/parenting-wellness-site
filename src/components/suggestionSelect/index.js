@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './suggestionsSelect.module.css';
+import styles from './styles.module.css';
 
 const SuggestionsSelect = ({ suggestions, selectedSuggestions, onSelect }) => {
     const handleSelect = (suggestion) => {

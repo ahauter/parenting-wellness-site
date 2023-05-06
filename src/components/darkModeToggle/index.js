@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './darkModeToggle.module.css';
+import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 

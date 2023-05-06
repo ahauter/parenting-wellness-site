@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './categorySelect.module.css'
+import styles from './styles.module.css'
 export default function CategorySelect({ categories, onSelect }) {
     const handleSelect = (category) => {
         onSelect(category);

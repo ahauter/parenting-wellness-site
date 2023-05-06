@@ -1,5 +1,5 @@
 import React from 'react';
-import SuggestionsSelect from '../components/suggestionsSelect';
+import SuggestionsSelect from '../components/suggestionSelect';
 import styles from './suggestionSelectPage.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
