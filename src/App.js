@@ -1,6 +1,6 @@
 import './App.css';
+import Header from './components/header';
 import SuggestionsSelectPage from './pages/suggestionSelectPage';
-import DarkModeToggle from './components/darkModeToggle';
 import CategorySelect, { SHOW_ALL_CATEGORIES } from './components/categorySelect';
 import ViewSelectionsPage from './pages/viewSelectionsPage';
 import data from './data.json';
@@ -27,6 +27,8 @@ function App() {
   const onPageSelect = (page) => {
     setPage(page);
   }
+  // back button will be hidden if the function is null
+  const back = page.length ? onBack : null;
 
   const suggestions = data[page] ? data[page].suggestions : [];
   const showAllSelections = page === SHOW_ALL_CATEGORIES;
@@ -34,7 +36,7 @@ function App() {
 
   return (
     <div className="App" data-theme={darkMode ? 'dark' : 'light'}>
-      <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Header onBack={back} darkMode={darkMode} setDarkMode={setDarkMode} />
       {showCategory &&
         <SuggestionsSelectPage
           onBack={onBack}
