@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './styles.module.css'
+
+export const SHOW_ALL_CATEGORIES = 'all';
+
 export default function CategorySelect({ categories, onSelect, size }) {
     const handleSelect = (category) => {
         onSelect(category);
@@ -16,8 +19,9 @@ export default function CategorySelect({ categories, onSelect, size }) {
     return (
         <div className={`${styles.categoryContainer}`}>
             <div className={styles.categoryTitle}>Select a Category</div>
-            {categories.map((category, i) => (
-                <div
+            {categories.map((category, i) => {
+                console.log(category.color)
+                return <div
                     key={category}
                     className={styles.category}
                     onClick={() => handleSelect(category)}
@@ -33,8 +37,19 @@ export default function CategorySelect({ categories, onSelect, size }) {
                         {category}
                     </div>
                 </div>
-            ))
+            })
             }
+            <div className={styles.center}
+                style={{
+                    height: size / 2,
+                    width: size / 2,
+                }}
+                onClick={() => handleSelect(SHOW_ALL_CATEGORIES)}
+            >
+                <div className={styles.centerInner}>
+                    See all your selections
+                </div>
+            </div>
         </div >
     );
 };

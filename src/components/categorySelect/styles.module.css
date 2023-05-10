@@ -10,7 +10,13 @@
     position: absolute;
     color: var(--text-color);
     font: var(--font-2);
-    height: 50%;
-    width: 50%;
+    border-radius: 50%;
+}
+
+.center {
+    position: absolute;
+    color: var(--text-color);
+    font: var(--font-1);
+    background-color: var(--background-color-secondary);
     border-radius: 50%;
 }
