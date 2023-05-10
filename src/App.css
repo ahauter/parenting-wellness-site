@@ -1,8 +1,8 @@
 /* Define the theme */
 :root {
   --font-size: 16px;
-  --font-family: 'Roboto', sans-serif;
-  --font-1: 500 3rem var(--font-family);
+  --font-family: 'Lora', sans-serif;
+  --font-1: 700 2.5rem var(--font-family);
   --font-2: 400 2rem var(--font-family);
   --font-3-bold: 400 1.5rem var(--font-family);
   --font-3: 200 1.5rem var(--font-family);
