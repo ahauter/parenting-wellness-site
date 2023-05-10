@@ -1,0 +1,26 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-primary);
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.title {
+    font: var(--font-1);
+    margin: 2rem;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: auto;
+}
