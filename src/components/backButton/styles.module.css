@@ -1,0 +1,7 @@
+.backButton {
+    color: var(--text-color);
+    font: var(--font-3);
+    margin: 2rem;
+    cursor: pointer;
+    margin-right: auto;
+}
