@@ -5,7 +5,7 @@ import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
 
 export function BackButton({ onBack }) {
     return <div
-        class={styles.backButton}
+        className={styles.backButton}
         onClick={() => onBack()}
     >
         <FontAwesomeIcon icon={faArrowLeftLong} /> Back
