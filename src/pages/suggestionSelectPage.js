@@ -6,6 +6,7 @@ const SuggestionSelectPage = ({ onBack, title, suggestions, selectedSuggestions,
     return <>
         <div className={styles.title}>{title}</div>
         <SuggestionsSelect
+            category={title}
             suggestions={suggestions}
             selectedSuggestions={selectedSuggestions}
             onSelect={onSelect}

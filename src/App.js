@@ -9,15 +9,26 @@ import { useState } from 'react';
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [selected, setSelected] = useState([]);
+  const [selectedWithCategory, setSelectedWithCategory] = useState({});
   const [page, setPage] = useState('');
   const pages = Object.keys(data);
+  console.log(selectedWithCategory);
 
-  const onSelect = (suggestion) => {
+  const onSelect = (category, suggestion) => {
+    let newCategory = selectedWithCategory[category] || [];
+    let newSuggestions = [...selected];
     if (selected.includes(suggestion)) {
-      setSelected(selected.filter((s) => s !== suggestion));
+      newSuggestions = newSuggestions.filter((s) => s !== suggestion);
+      newCategory = newCategory.filter((s) => s !== suggestion);
     } else {
-      setSelected([...selected, suggestion]);
+      newSuggestions.push(suggestion);
+      newCategory.push(suggestion);
     }
+    setSelected(newSuggestions);
+    setSelectedWithCategory({
+      ...selectedWithCategory,
+      [category]: newCategory,
+    });
   };
 
   const onBack = () => {
