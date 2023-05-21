@@ -27,6 +27,12 @@ function App() {
   const onPageSelect = (page) => {
     setPage(page);
   }
+
+  const getCategoryColor = (category) => {
+    const categoryData = data[category];
+    return categoryData ? categoryData.color : null;
+  };
+
   // back button will be hidden if the function is null
   const back = page.length ? onBack : null;
 
@@ -44,16 +50,18 @@ function App() {
           suggestions={suggestions}
           selectedSuggestions={selected}
           onSelect={onSelect}
+          getCategoryColor={getCategoryColor}
         />
       }
       {page.length === 0 &&
         <CategorySelect
           categories={pages}
           onSelect={onPageSelect}
+          getCategoryColor={getCategoryColor}
         />
       }
       {showAllSelections &&
-        <ViewSelectionsPage selections={selected} onBack={onBack} />
+        <ViewSelectionsPage selections={selected} onBack={onBack} getCategoryColor={getCategoryColor} />
       }
 
     </div>

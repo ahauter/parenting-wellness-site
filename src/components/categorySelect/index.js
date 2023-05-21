@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 
 export const SHOW_ALL_CATEGORIES = 'all';
 
-export default function CategorySelect({ categories, onSelect, size }) {
+export default function CategorySelect({ categories, onSelect, size, getCategoryColor }) {
     const handleSelect = (category) => {
         onSelect(category);
     };
@@ -20,7 +20,7 @@ export default function CategorySelect({ categories, onSelect, size }) {
         <div className={`${styles.categoryContainer}`}>
             <div className={styles.categoryTitle}>Select a Category</div>
             {categories.map((category, i) => {
-                console.log(category.color)
+                console.log(getCategoryColor(category))
                 return <div
                     key={category}
                     className={styles.category}
@@ -29,7 +29,7 @@ export default function CategorySelect({ categories, onSelect, size }) {
                         height: size,
                         width: size,
                         transform: `rotate(${i * rotation}deg)`,
-                        backgroundColor: `hsl(${Math.random() * 360}, 100%, 80%)`,
+                        backgroundColor: `${getCategoryColor(category)}`,
                         clipPath: arcPolygon
                     }}
                 >
