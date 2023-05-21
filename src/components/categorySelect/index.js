@@ -20,7 +20,6 @@ export default function CategorySelect({ categories, onSelect, size, getCategory
         <div className={`${styles.categoryContainer}`}>
             <div className={styles.categoryTitle}>Select a Category</div>
             {categories.map((category, i) => {
-                console.log(getCategoryColor(category))
                 return <div
                     key={category}
                     className={styles.category}
