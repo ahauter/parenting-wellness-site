@@ -53,7 +53,14 @@ function App() {
 
   return (
     <div className="App" data-theme={darkMode ? 'dark' : 'light'}>
-      <Header onBack={back} darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Header
+        onBack={back}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        onSelect={onPageSelect}
+        categories={pages}
+        getCategoryColor={getCategoryColor}
+      />
       {showCategory &&
         <SuggestionsSelectPage
           onBack={onBack}
