@@ -8,6 +8,7 @@ export default function CategorySelect({ categories, onSelect, size, getCategory
         onSelect(category);
     };
     size = size || 400;
+    // TODO resize text based on size
     const numCategories = categories.length;
     // we want to make a selection wheel
     const rotation = 360 / numCategories;
@@ -17,7 +18,7 @@ export default function CategorySelect({ categories, onSelect, size, getCategory
 
 
     return (
-        <div className={`${styles.categoryContainer}`}>
+        <div className={styles.categoryContainer}>
             <div className={styles.categoryTitle}>Select a Category</div>
             {categories.map((category, i) => {
                 return <div
