@@ -15,6 +15,7 @@ function App() {
   console.log(selectedWithCategory);
 
   const onSelect = (category, suggestion) => {
+    console.log(category, suggestion);
     let newCategory = selectedWithCategory[category] || [];
     let newSuggestions = [...selected];
     if (selected.includes(suggestion)) {
@@ -36,6 +37,7 @@ function App() {
   }
 
   const onPageSelect = (page) => {
+    console.log("PAGE", page);
     setPage(page);
   }
 
@@ -58,8 +60,7 @@ function App() {
         darkMode={darkMode}
         setDarkMode={setDarkMode}
         onSelect={onPageSelect}
-        categories={pages}
-        getCategoryColor={getCategoryColor}
+        categories={data}
       />
       {showCategory &&
         <SuggestionsSelectPage
@@ -73,7 +74,7 @@ function App() {
       }
       {page.length === 0 &&
         <CategorySelect
-          categories={pages}
+          categoryData={data}
           onSelect={onPageSelect}
           getCategoryColor={getCategoryColor}
         />

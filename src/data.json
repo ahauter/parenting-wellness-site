@@ -1,5 +1,6 @@
 {
     "Quality Sleep": {
+        "title": "Sleep",
         "description": "Sleep is a vital part of mental and emotional health. Especially for young children, quality sleep is essential for healthy developement.",
         "suggestions": [
             "Create a nightly wind-down routine that helps you relax and prepare for sleep.",
@@ -12,6 +13,7 @@
         "color": "#FFC107"
     },
     "Proper Nutrition": {
+        "title": "Nutrition",
         "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
         "suggestions": [
             "Use smaller bowls and spoons when eating foods high in fat and sugar.",
@@ -25,6 +27,7 @@
         "color": "#4CAF50"
     },
     "Proper Nutrition2": {
+        "title": "Nutrition2",
         "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
         "suggestions": [
             "Use smaller bowls and spoons when eating foods high in fat and sugar.",
@@ -38,6 +41,7 @@
         "color": "#4CAF50"
     },
     "Proper Nutrition3": {
+        "title": "Nutrition3",
         "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
         "suggestions": [
             "Use smaller bowls and spoons when eating foods high in fat and sugar.",
@@ -51,6 +55,7 @@
         "color": "#4CAF50"
     },
     "Proper Nutrition4": {
+        "title": "Nutrition21",
         "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
         "suggestions": [
             "Use smaller bowls and spoons when eating foods high in fat and sugar.",

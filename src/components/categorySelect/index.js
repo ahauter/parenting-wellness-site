@@ -3,10 +3,11 @@ import styles from './styles.module.css'
 
 export const SHOW_ALL_CATEGORIES = 'all';
 
-export default function CategorySelect({ categories, onSelect, size, getCategoryColor }) {
+export default function CategorySelect({ categoryData, onSelect, size }) {
     const handleSelect = (category) => {
         onSelect(category);
     };
+    const categories = Object.keys(categoryData);
     size = size || 400;
     // TODO resize text based on size
     const fontSize = size / 20;
@@ -17,44 +18,37 @@ export default function CategorySelect({ categories, onSelect, size, getCategory
     const vertexOffet = Math.round(r * Math.tan(Math.PI / numCategories));
     const arcPolygon = `polygon(${r - vertexOffet}px 0, ${r + vertexOffet}px 0, 50% 50% )`;
 
-    const hoverEventFactory = (elemId) => {
-        return (isMouseOver) => {
-            const categoryElement = document.getElementById(elemId);
-            categoryElement.style.display = isMouseOver ? 'block' : 'none';
-        };
-    };
-
     //TODO make category text and icon appear in correct place
     return (
         <div className={styles.categoryContainer}>
             <div className={styles.categoryTitle}>Select a Category</div>
-            {categories.map((category, i) => {
-                const elemId = `text-display-${category}`;
+            {categories.map((categoryName, i) => {
+                console.log(categoryName)
+                const category = categoryData[categoryName];
+                const elemId = `text-display-${categoryName}`;
                 return <>
                     <div
                         key={category}
                         className={styles.category}
-                        onClick={() => handleSelect(category)}
-                        onMouseOver={() => hoverEventFactory(elemId)(true)}
-                        onMouseOut={() => hoverEventFactory(elemId)(false)}
+                        onClick={() => handleSelect(categoryName)}
                         style={{
                             height: size,
                             width: size,
-                            backgroundColor: `${getCategoryColor(category)}`,
+                            backgroundColor: `${category.color}`,
                             clipPath: arcPolygon,
                             transform: `rotate(${i * rotation}deg)`,
                         }}
-                    />
-                    <div>
-                        <span
-                            id={elemId}
-                            style={{
-                                transform: `rotate(${-i * rotation}deg)`,
-                                display: 'none',
-                                fontSize: fontSize,
-                            }}>
-                            {category}
-                        </span>
+                    >
+                        <div className={styles.categoryTextContainer}>
+                            <span
+                                id={elemId}
+                                style={{
+                                    transform: `rotate(${-1 * i * rotation}deg)`,
+                                    fontSize: fontSize,
+                                }}>
+                                {category.title}
+                            </span>
+                        </div>
                     </div>
                 </>
             })

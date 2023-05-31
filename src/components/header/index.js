@@ -5,7 +5,7 @@ import DarkModeToggle from "../darkModeToggle";
 import CategorySelect from "../categorySelect";
 
 
-export default function Header({ onBack, darkMode, setDarkMode, categories, onSelect, getCategoryColor }) {
+export default function Header({ onBack, darkMode, setDarkMode, categories, onSelect }) {
     const showBack = onBack ? true : false;
     return (
         <>
@@ -19,9 +19,8 @@ export default function Header({ onBack, darkMode, setDarkMode, categories, onSe
             </div>
             <div className={styles.categorySelect}>
                 {showBack && <CategorySelect
-                    categories={categories}
+                    categoryData={categories}
                     onSelect={onSelect}
-                    getCategoryColor={getCategoryColor}
                     size={200}
                 />}
             </div >
