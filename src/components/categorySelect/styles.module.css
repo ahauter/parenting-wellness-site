@@ -19,4 +19,8 @@
     font: var(--font-1);
     background-color: var(--background-color-secondary);
     border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
