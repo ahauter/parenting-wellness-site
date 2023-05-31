@@ -4,11 +4,12 @@
     right: 0;
     z-index: 1;
     background-color: var(--background-color-secondary);
-    border: 1px solid #ccc;
     border-top: none;
     overflow-y: auto;
-    border-radius: 50px;
     text-align: left;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .suggestionCheckbox {
