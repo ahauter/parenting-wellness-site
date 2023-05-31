@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css'
-import { text } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { icons } from '../../icons';
 
 export const SHOW_ALL_CATEGORIES = 'all';
 
@@ -52,6 +53,8 @@ export default function CategorySelect({ categoryData, onSelect, size }) {
                                     fontSize: fontSize,
                                 }}>
                                 {category.title}
+                                <br />
+                                <FontAwesomeIcon icon={icons(categoryName)} />
                             </span>
                         </div>
                     </div>
