@@ -11,7 +11,6 @@ function App() {
   const [selected, setSelected] = useState([]);
   const [selectedWithCategory, setSelectedWithCategory] = useState({});
   const [page, setPage] = useState('');
-  const pages = Object.keys(data);
   console.log(selectedWithCategory);
 
   const onSelect = (category, suggestion) => {
@@ -80,7 +79,11 @@ function App() {
         />
       }
       {showAllSelections &&
-        <ViewSelectionsPage selections={selected} onBack={onBack} getCategoryColor={getCategoryColor} />
+        <ViewSelectionsPage
+          selections={selectedWithCategory}
+          categoryData={data}
+          onBack={onBack}
+        />
       }
 
     </div>
