@@ -1,25 +1,40 @@
 import React from "react";
 import { Page, Text, View, Document, StyleSheet, PDFDownloadLink, Font } from '@react-pdf/renderer';
+import styles from './styles.module.css'
 
-export default function ViewSelectionsPage({ selections, onBack }) {
-    const showSelections = selections && selections.length ? true : false;
+export default function ViewSelectionsPage({ selections, categoryData, onBack }) {
+    const categories = Object.keys(categoryData);
+    // show selections if at least one category has selections
+    const showSelections = selections &&
+        categories.map(cat => selections[cat])
+            .filter(sel => sel && sel.length > 0).length > 0;
     return (
         <div>
             <h1>View Selections</h1>
             <div>
                 {showSelections && <h2>Here are the items you have selected</h2>}
-                <ul>
-                    {showSelections && selections.map((selection) => (
-                        <li key={selection.id}>
-                            {selection}
-                        </li>
-                    ))}
-                </ul>
+                {showSelections && <div>
+                    {categories.map((category) => (
+                        <>
+                            {
+                                selections[category] && selections[category].length > 0 &&
+                                <div key={category}>
+                                    ADD a logo here
+                                    <h3>{category}</h3>
+                                    <ul>
+                                        {selections[category].map((selection) => (
+                                            <li key={selection}>{selection}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            }
+                        </>))}
+                </div>}
                 {!showSelections && <h2>You have not selected any items yet</h2>}
                 {!showSelections && <button onClick={onBack}>Go Back</button>}
             </div>
             <div>
-                {showSelections &&
+                {false &&
                     <PDFDownloadLink document={<ViewSelectionsPDF selections={selections} />} fileName="wellnessTips.pdf">
                         Click here to download your selections
                     </PDFDownloadLink>
