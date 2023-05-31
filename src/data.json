@@ -55,7 +55,35 @@
         "color": "#4CAF50"
     },
     "Proper Nutrition4": {
-        "title": "Nutrition21",
+        "title": "Scheduling",
+        "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
+        "suggestions": [
+            "Use smaller bowls and spoons when eating foods high in fat and sugar.",
+            "Consume the skin of fruits and vegetables for added fiber.",
+            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom.",
+            "Make extra food for leftovers",
+            "Pack a nutritious lunch for work or school.",
+            "Limit alcohol and drug consumtion.",
+            "Eat fresh fruits as snacks instead of processed foods."
+        ],
+        "color": "#4CAF50"
+    },
+    "Proper Nutrition5": {
+        "title": "Scheduling",
+        "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
+        "suggestions": [
+            "Use smaller bowls and spoons when eating foods high in fat and sugar.",
+            "Consume the skin of fruits and vegetables for added fiber.",
+            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom.",
+            "Make extra food for leftovers",
+            "Pack a nutritious lunch for work or school.",
+            "Limit alcohol and drug consumtion.",
+            "Eat fresh fruits as snacks instead of processed foods."
+        ],
+        "color": "#4CAF50"
+    },
+    "Proper Nutrition6": {
+        "title": "Scheduling",
         "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
         "suggestions": [
             "Use smaller bowls and spoons when eating foods high in fat and sugar.",

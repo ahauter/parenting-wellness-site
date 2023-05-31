@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css'
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 export const SHOW_ALL_CATEGORIES = 'all';
 
@@ -23,9 +24,9 @@ export default function CategorySelect({ categoryData, onSelect, size }) {
         <div className={styles.categoryContainer}>
             <div className={styles.categoryTitle}>Select a Category</div>
             {categories.map((categoryName, i) => {
-                console.log(categoryName)
                 const category = categoryData[categoryName];
                 const elemId = `text-display-${categoryName}`;
+                const textRotation = -1 * (i * rotation);
                 return <>
                     <div
                         key={category}
@@ -39,11 +40,15 @@ export default function CategorySelect({ categoryData, onSelect, size }) {
                             transform: `rotate(${i * rotation}deg)`,
                         }}
                     >
-                        <div className={styles.categoryTextContainer}>
+                        <div
+                            className={styles.categoryTextContainer}
+                            style={{
+                                top: `${size / 8}px`,
+                            }}>
                             <span
                                 id={elemId}
                                 style={{
-                                    transform: `rotate(${-1 * i * rotation}deg)`,
+                                    transform: `rotate(${textRotation}deg)`,
                                     fontSize: fontSize,
                                 }}>
                                 {category.title}
