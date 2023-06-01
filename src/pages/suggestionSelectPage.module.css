@@ -8,3 +8,10 @@
     font: var(--font-3);
     color: var(--secondary-text-color);
 }
+
+.container {
+    margin: 2rem;
+    background-color: var(--background-color-secondary);
+    border-radius: 1rem;
+    padding: 1rem;
+}

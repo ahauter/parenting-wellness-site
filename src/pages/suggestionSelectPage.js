@@ -2,8 +2,8 @@ import React from 'react';
 import SuggestionsSelect from '../components/suggestionSelect';
 import styles from './suggestionSelectPage.module.css';
 
-const SuggestionSelectPage = ({ onBack, title, description, suggestions, selectedSuggestions, onSelect }) => {
-    return <>
+const SuggestionSelectPage = ({ title, description, suggestions, selectedSuggestions, onSelect }) => {
+    return <div className={styles.container}>
         <div className={styles.title}>{title}</div>
         <div className={styles.description}>{description}</div>
         <SuggestionsSelect
@@ -12,7 +12,7 @@ const SuggestionSelectPage = ({ onBack, title, description, suggestions, selecte
             selectedSuggestions={selectedSuggestions}
             onSelect={onSelect}
         />
-    </>
+    </div>
 };
 
 export default SuggestionSelectPage;
