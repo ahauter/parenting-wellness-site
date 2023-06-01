@@ -1,0 +1,38 @@
+.container {
+    margin: 2rem;
+    background-color: var(--background-color-secondary);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.title {
+    font: var(--font-1);
+    color: var(--text-color);
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font: var(--font-2);
+}
+
+.selectionList {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    font: var(--font-3);
+    color: var(--secondary-text-color);
+    text-align: left;
+}
+
+.description {
+    font: var(--font-3);
+    color: var(--text-color);
+    text-align: left;
+}
+
+.contentContainer {
+    margin-top: 1rem;
+}

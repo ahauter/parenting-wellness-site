@@ -1,6 +1,9 @@
 import React from "react";
 import { Page, Text, View, Document, StyleSheet, PDFDownloadLink, Font } from '@react-pdf/renderer';
 import styles from './styles.module.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { icons } from '../../icons';
+
 
 export default function ViewSelectionsPage({ selections, categoryData, onBack }) {
     const categories = Object.keys(categoryData);
@@ -9,19 +12,31 @@ export default function ViewSelectionsPage({ selections, categoryData, onBack })
         categories.map(cat => selections[cat])
             .filter(sel => sel && sel.length > 0).length > 0;
     return (
-        <div>
-            <h1>View Selections</h1>
-            <div>
-                {showSelections && <h2>Here are the items you have selected</h2>}
+        <div className={styles.container}>
+            <h1 className={styles.title}>Your Wellness Selections</h1>
+            <div
+                className={styles.description}>
+                Based on your selections, here is a list of incremental changes
+                that may be helpful in improving your mental wellness:
+            </div>
+            <div className={styles.contentContainer}>
                 {showSelections && <div>
                     {categories.map((category) => (
                         <>
                             {
-                                selections[category] && selections[category].length > 0 &&
+                                selections[category] &&
+                                selections[category].length > 0 &&
                                 <div key={category}>
-                                    ADD a logo here
-                                    <h3>{category}</h3>
-                                    <ul>
+                                    <div
+                                        style={{
+                                            color: categoryData[category].color,
+                                            borderBottom: `5px solid ${categoryData[category].color}`,
+                                        }}
+                                        className={styles.headerContainer}>
+                                        <FontAwesomeIcon icon={icons(category)} />
+                                        <div className={styles.categoryHeader}>{category}</div>
+                                    </div>
+                                    <ul className={styles.selectionList}>
                                         {selections[category].map((selection) => (
                                             <li key={selection}>{selection}</li>
                                         ))}
@@ -35,16 +50,16 @@ export default function ViewSelectionsPage({ selections, categoryData, onBack })
             </div>
             <div>
                 {false &&
-                    <PDFDownloadLink document={<ViewSelectionsPDF selections={selections} />} fileName="wellnessTips.pdf">
+                    <PDFDownloadLink document={<ViewSelectionsPDF selections={[]} />} fileName="wellnessTips.pdf">
                         Click here to download your selections
                     </PDFDownloadLink>
                 }
             </div>
-        </div>
+        </div >
     );
 }
 
-export function ViewSelectionsPDF({ selections }) {
+export function ViewSelectionsPDF({ selectionsWithCategories, selections }) {
     /*
     TODO finish that there styles 
     We want bullets for each selection
