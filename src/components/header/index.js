@@ -2,11 +2,11 @@ import React from "react";
 import styles from './styles.module.css'
 import { BackButton } from "../backButton";
 import DarkModeToggle from "../darkModeToggle";
-import CategorySelect from "../categorySelect";
 
 
 export default function Header({ onBack, darkMode, setDarkMode, categories, onSelect }) {
     const showBack = onBack ? true : false;
+    const bottomMargin = showBack ? '8rem' : '12rem';
     return (
         <>
             <div className={styles.header}>
@@ -17,12 +17,7 @@ export default function Header({ onBack, darkMode, setDarkMode, categories, onSe
                 <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
 
             </div>
-            <div className={styles.categorySelect}>
-                {showBack && <CategorySelect
-                    categoryData={categories}
-                    onSelect={onSelect}
-                    size={200}
-                />}
+            <div style={{ padding: bottomMargin }}>
             </div >
         </>
     );

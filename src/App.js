@@ -61,20 +61,20 @@ function App() {
         onSelect={onPageSelect}
         categories={data}
       />
+      <CategorySelect
+        categoryData={data}
+        onSelect={onPageSelect}
+        getCategoryColor={getCategoryColor}
+        size={page.length ? 200 : 400}
+      />
       {showCategory &&
         <SuggestionsSelectPage
           onBack={onBack}
           title={page}
           suggestions={suggestions}
+          description={data[page].description}
           selectedSuggestions={selected}
           onSelect={onSelect}
-          getCategoryColor={getCategoryColor}
-        />
-      }
-      {page.length === 0 &&
-        <CategorySelect
-          categoryData={data}
-          onSelect={onPageSelect}
           getCategoryColor={getCategoryColor}
         />
       }
