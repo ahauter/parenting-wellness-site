@@ -30,6 +30,7 @@
     font: var(--font-2);
     padding: 1rem;
     color: var(--text-color);
+    border-radius: 1rem;
 }
 
 .suggestion:hover {
