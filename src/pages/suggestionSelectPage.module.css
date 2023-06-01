@@ -3,3 +3,8 @@
     margin: 2rem;
     color: var(--text-color);
 }
+
+.description {
+    font: var(--font-3);
+    color: var(--secondary-text-color);
+}
