@@ -40,3 +40,9 @@
   min-height: 100vh;
   background-color: var(--background-color);
 }
+
+.welcome {
+  font: var(--font-2);
+  color: var(--text-color);
+  margin: 2rem;
+}

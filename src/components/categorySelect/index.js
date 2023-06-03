@@ -22,7 +22,9 @@ export default function CategorySelect({ categoryData, onSelect, size }) {
 
     //TODO make category text and icon appear in correct place
     return (
-        <div className={styles.categoryContainer}>
+        <div className={styles.categoryContainer}
+            style={{ paddingTop: `${size / 2}px` }}
+        >
             <div className={styles.categoryTitle}>Select a Category</div>
             {categories.map((categoryName, i) => {
                 const category = categoryData[categoryName];

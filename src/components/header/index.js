@@ -6,7 +6,7 @@ import DarkModeToggle from "../darkModeToggle";
 
 export default function Header({ onBack, darkMode, setDarkMode, categories, onSelect }) {
     const showBack = onBack ? true : false;
-    const bottomMargin = showBack ? '8rem' : '12rem';
+    const bottomMargin = '4rem';
     return (
         <>
             <div className={styles.header}>
@@ -17,8 +17,7 @@ export default function Header({ onBack, darkMode, setDarkMode, categories, onSe
                 <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
 
             </div>
-            <div style={{ padding: bottomMargin }}>
-            </div >
+            <div className={styles.spacer} />
         </>
     );
 }

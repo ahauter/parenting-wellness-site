@@ -61,6 +61,13 @@ function App() {
         onSelect={onPageSelect}
         categories={data}
       />
+      {!showCategory && !showAllSelections &&
+        <div className="welcome">
+          Select an area of difficulty on the wellness wheel to see suggestions of incremental changes that may help improve your mental wellness:
+          <br />
+          <br />
+        </div>
+      }
       <CategorySelect
         categoryData={data}
         onSelect={onPageSelect}

@@ -36,3 +36,8 @@
     margin-right: 5rem;
     padding: 5rem;
 }
+
+.spacer {
+    width: 100%;
+    height: var(--header-height);
+}
