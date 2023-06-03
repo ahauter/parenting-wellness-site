@@ -6,7 +6,6 @@ import DarkModeToggle from "../darkModeToggle";
 
 export default function Header({ onBack, darkMode, setDarkMode, categories, onSelect }) {
     const showBack = onBack ? true : false;
-    const bottomMargin = '4rem';
     return (
         <>
             <div className={styles.header}>
