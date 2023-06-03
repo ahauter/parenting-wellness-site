@@ -32,9 +32,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build
         run: npm run build
-      
-      - name: Login to GH 
-        run: gh auth login --with-token < ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy result
         run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
