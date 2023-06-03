@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/parenting-wellness-site/static/css/main.0fff8d8e.css",
-    "main.js": "/parenting-wellness-site/static/js/main.c9ff7770.js",
+    "main.css": "/parenting-wellness-site/static/css/main.ca6dc01e.css",
+    "main.js": "/parenting-wellness-site/static/js/main.89803b07.js",
     "static/js/787.b2a7c5b3.chunk.js": "/parenting-wellness-site/static/js/787.b2a7c5b3.chunk.js",
     "index.html": "/parenting-wellness-site/index.html",
-    "main.0fff8d8e.css.map": "/parenting-wellness-site/static/css/main.0fff8d8e.css.map",
-    "main.c9ff7770.js.map": "/parenting-wellness-site/static/js/main.c9ff7770.js.map",
+    "main.ca6dc01e.css.map": "/parenting-wellness-site/static/css/main.ca6dc01e.css.map",
+    "main.89803b07.js.map": "/parenting-wellness-site/static/js/main.89803b07.js.map",
     "787.b2a7c5b3.chunk.js.map": "/parenting-wellness-site/static/js/787.b2a7c5b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fff8d8e.css",
-    "static/js/main.c9ff7770.js"
+    "static/css/main.ca6dc01e.css",
+    "static/js/main.89803b07.js"
   ]
 }
