@@ -1,5 +1,5 @@
 import React from "react";
-import { Page, Text, View, Document, StyleSheet, PDFDownloadLink, Font } from '@react-pdf/renderer';
+import { Page, Text, View, Document, PDFDownloadLink, Font } from '@react-pdf/renderer';
 import styles from './styles.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from '../../icons';

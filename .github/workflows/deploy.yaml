@@ -32,6 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build
         run: npm run build
-       
+      
       - name: Deploy result
         run: npm run deploy
