@@ -11,7 +11,7 @@
             "Try a white noise app or machine",
             "Sleep in a dark space"
         ],
-        "color": "#FFE598"
+        "color": "#f5d062"
     },
     "Maintaining Balanced Nutrition": {
         "title": "Nutrition",
@@ -71,9 +71,9 @@
         "suggestions": [
             "Join a Facebook group for parents that share your child’s diagnosis",
             "Regularly schedule time to speak with a trusted loved one",
-            "Join a support group",
-            "Make an appointment with a psychologist/psychiatrist"
+            "Join a support group (Directory of groups for parents of children with disabilities: https://www.cde.ca.gov/sp/se/qa/caprntorg.asp)",
+            "Make an appointment with a psychologist/psychiatrist (Directory of psychologist/psychiatrist: https://www.psychologytoday.com/us"
         ],
-        "color": "#F6B26B"
+        "color": "#f2a555"
     }
 }
