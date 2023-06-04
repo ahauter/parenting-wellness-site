@@ -16,6 +16,7 @@
   --secondary-text-color: #0D47A1;
   --text-contrast-color: #fff;
   --secondary-text-contrast-color: #90CAF9;
+  --category-select-text-color: : #fafafa;
 }
 
 [data-theme="dark"] {
