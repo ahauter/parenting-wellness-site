@@ -4,7 +4,7 @@
   --font-family: 'Lora', sans-serif;
   --font-1: 700 2.5rem var(--font-family);
   --font-2: 400 2rem var(--font-family);
-  --font-3-bold: 400 1.5rem var(--font-family);
+  --font-3-bold: 700 1.5rem var(--font-family);
   --font-3: 200 1.5rem var(--font-family);
   --background-color: aliceblue;
   --background-color-secondary: #fff;
@@ -16,6 +16,23 @@
   --secondary-text-color: #0D47A1;
   --text-contrast-color: #fff;
   --secondary-text-contrast-color: #90CAF9;
+}
+
+@media screen and (max-width: 768px) and (min-width: 672px) {
+  :root {
+    --font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 671px) {
+  :root {
+    --font-size: 8px;
+  }
+}
+
+
+html {
+  font-size: var(--font-size);
 }
 
 [data-theme="dark"] {
@@ -37,12 +54,30 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  min-height: 100vh;
+  height: 100%;
   background-color: var(--background-color);
+  padding-bottom: 400px;
 }
 
 .welcome {
   font: var(--font-2);
+  color: var(--text-color);
+  margin: 2rem;
+}
+
+.mental-health-blurb {
+  font: var(--font-3);
+  color: var(--text-color);
+  margin: 2rem;
+}
+
+.mental-health-blurb b {
+  font: var(--font-3-bold);
+  color: var(--text-color);
+}
+
+.mentalHealthMatters {
+  font: var(--font-1);
   color: var(--text-color);
   margin: 2rem;
 }
