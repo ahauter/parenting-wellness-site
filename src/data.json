@@ -11,7 +11,7 @@
             "Try a white noise app or machine",
             "Sleep in a dark space"
         ],
-        "color": "#f5d062"
+        "color": "FFC107"
     },
     "Maintaining Balanced Nutrition": {
         "title": "Nutrition",
@@ -74,6 +74,6 @@
             "Join a support group (Directory of groups for parents of children with disabilities: https://www.cde.ca.gov/sp/se/qa/caprntorg.asp)",
             "Make an appointment with a psychologist/psychiatrist (Directory of psychologist/psychiatrist: https://www.psychologytoday.com/us"
         ],
-        "color": "#f2a555"
+        "color": "#4CAF50"
     }
 }
