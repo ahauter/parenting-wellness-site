@@ -9,7 +9,7 @@
 
 .category {
     position: absolute;
-    color: var(--text-color);
+    color: var(--category-select-text-color);
     font: var(--font-2);
     border-radius: 50%;
 }

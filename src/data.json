@@ -1,99 +1,79 @@
 {
-    "Quality Sleep": {
+    "Having Quality Sleep": {
         "title": "Sleep",
-        "description": "Sleep is a vital part of mental and emotional health. Especially for young children, quality sleep is essential for healthy developement.",
+        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
         "suggestions": [
-            "Create a nightly wind-down routine that helps you relax and prepare for sleep.",
-            "Avoid caffeine six hours before bedtime.",
-            "Leave the bedroom and do something relaxing if unable to fall asleep within 30 minutes of laying in bed.",
-            "Reduce use of electronics one hour before bedtime.",
-            "Try white noise or a fan to help you sleep.",
-            "Sleep in a dark, cool room."
+            "Create a nightly wind down routine (such as taking a warm bath, drinking caffeine-free tea, dimming the lights, or reading a book)",
+            "Keep a consistent sleep schedule ",
+            "Leave the bedroom and do something relaxing if unable to fall asleep after more than 30 minutes of laying in bed",
+            "Avoid caffeine six hours before going to sleep",
+            "Reduce use of electronics one hour before going to bed",
+            "Try a white noise app or machine",
+            "Sleep in a dark space"
         ],
-        "color": "#FFC107"
+        "color": "#FFE598"
     },
-    "Proper Nutrition": {
+    "Maintaining Balanced Nutrition": {
         "title": "Nutrition",
-        "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
+        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
         "suggestions": [
-            "Use smaller bowls and spoons when eating foods high in fat and sugar.",
-            "Consume the skin of fruits and vegetables for added fiber.",
-            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom.",
+            "Use smaller bowls and spoons when eating foods that are high in processed sugar",
+            "Consume the skin when eating fruits and vegetables to increase your intake of fiber",
+            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom",
             "Make extra food for leftovers",
-            "Pack a nutritious lunch for work or school.",
-            "Limit alcohol and drug consumtion.",
-            "Eat fresh fruits as snacks instead of processed foods."
+            "Pack a lunch ahead of time",
+            "Limit alcohol and drug consumption"
         ],
-        "color": "#4CAF50"
+        "color": "#93C47D"
     },
-    "Proper Nutrition2": {
-        "title": "Nutrition2",
-        "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
+    "Engaging in Physical Movement & Getting Outside": {
+        "title": "Movement",
+        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
         "suggestions": [
-            "Use smaller bowls and spoons when eating foods high in fat and sugar.",
-            "Consume the skin of fruits and vegetables for added fiber.",
-            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom.",
-            "Make extra food for leftovers",
-            "Pack a nutritious lunch for work or school.",
-            "Limit alcohol and drug consumtion.",
-            "Eat fresh fruits as snacks instead of processed foods."
+            "Schedule exercise ahead of time",
+            "Take the stairs when possible",
+            "Stretch while watching television",
+            "Play outside with your children",
+            "Take walks during lunch breaks",
+            "Complete errands by foot or bicycle"
         ],
-        "color": "#4CAF50"
+        "color": "#5891AD"
     },
-    "Proper Nutrition3": {
-        "title": "Nutrition3",
-        "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
+    "Developing Time Management Techniques": {
+        "title": "Time",
+        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
         "suggestions": [
-            "Use smaller bowls and spoons when eating foods high in fat and sugar.",
-            "Consume the skin of fruits and vegetables for added fiber.",
-            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom.",
-            "Make extra food for leftovers",
-            "Pack a nutritious lunch for work or school.",
-            "Limit alcohol and drug consumtion.",
-            "Eat fresh fruits as snacks instead of processed foods."
+            "Schedule time for breaks, unexpected events, or just being with your child",
+            "Make a to-do list in order of your most immediate priorities",
+            "Create a to-don’t list of things that can be addressed later on",
+            "Utilize a virtual calendar app that is shareable between family members",
+            "Reach out for help when needed"
         ],
-        "color": "#4CAF50"
+        "color": "#8E7CC3"
     },
-    "Proper Nutrition4": {
-        "title": "Scheduling",
-        "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
+    "Practicing Mindfulness": {
+        "title": "Mindfulness",
+        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
         "suggestions": [
-            "Use smaller bowls and spoons when eating foods high in fat and sugar.",
-            "Consume the skin of fruits and vegetables for added fiber.",
-            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom.",
-            "Make extra food for leftovers",
-            "Pack a nutritious lunch for work or school.",
-            "Limit alcohol and drug consumtion.",
-            "Eat fresh fruits as snacks instead of processed foods."
+            "Explore a mindfulness app such as Insight Timer, Calm, or Headspace",
+            "Keep a journal to write about your experiences, thoughts, and sensations",
+            "Practice being present during at least one daily activity (such as while driving, eating breakfast, or washing the dishes)",
+            "Set a timer for three minutes and focus on your breath",
+            "Practice breathing with a longer exhale than inhale",
+            "Try a body scan meditation (notice the sensations in your body, starting from your toes and traveling up to your head)",
+            "Try the 5-4-3-2-1 grounding technique (acknowledging five things you can see around you, four things you can touch, three things you can hear, two things you can smell, and one thing you can taste)"
         ],
-        "color": "#4CAF50"
+        "color": "#A64D78"
     },
-    "Proper Nutrition5": {
-        "title": "Scheduling",
-        "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
+    "Seeking Social Support": {
+        "title": "Support",
+        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
         "suggestions": [
-            "Use smaller bowls and spoons when eating foods high in fat and sugar.",
-            "Consume the skin of fruits and vegetables for added fiber.",
-            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom.",
-            "Make extra food for leftovers",
-            "Pack a nutritious lunch for work or school.",
-            "Limit alcohol and drug consumtion.",
-            "Eat fresh fruits as snacks instead of processed foods."
+            "Join a Facebook group for parents that share your child’s diagnosis",
+            "Regularly schedule time to speak with a trusted loved one",
+            "Join a support group (Directory of groups for parents of children with disabilities: https://www.cde.ca.gov/sp/se/qa/caprntorg.asp)",
+            "Make an appointment with a psychologist/psychiatrist (Directory of psychologist/psychiatrist: https://www.psychologytoday.com/us"
         ],
-        "color": "#4CAF50"
-    },
-    "Proper Nutrition6": {
-        "title": "Scheduling",
-        "description": "Diet has a huge impact on mental well-being. Eating healthy foods can reduce risk of depression and anxiety, and improve mood.",
-        "suggestions": [
-            "Use smaller bowls and spoons when eating foods high in fat and sugar.",
-            "Consume the skin of fruits and vegetables for added fiber.",
-            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom.",
-            "Make extra food for leftovers",
-            "Pack a nutritious lunch for work or school.",
-            "Limit alcohol and drug consumtion.",
-            "Eat fresh fruits as snacks instead of processed foods."
-        ],
-        "color": "#4CAF50"
+        "color": "#F6B26B"
     }
 }
