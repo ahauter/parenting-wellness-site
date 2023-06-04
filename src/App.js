@@ -63,8 +63,9 @@ function App() {
       />
       {!showCategory && !showAllSelections &&
         <div className="welcome">
-          Select an area of difficulty on the wellness wheel to see suggestions of incremental changes that may help improve your mental wellness:
+          Kind of a long blurb
           <br />
+          Select an area of difficulty on the wellness wheel to see suggestions of incremental changes that may help improve your mental wellness:
           <br />
         </div>
       }
@@ -83,6 +84,7 @@ function App() {
           selectedSuggestions={selected}
           onSelect={onSelect}
           getCategoryColor={getCategoryColor}
+          links={data[page].links}
         />
       }
       {showAllSelections &&

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-const SuggestionsSelect = ({ category, suggestions, selectedSuggestions, onSelect }) => {
+const SuggestionsSelect = ({ category, suggestions, links, selectedSuggestions, onSelect }) => {
     return (
         <div className={styles.suggestionContainer}>
             {suggestions.map((suggestion) => (
@@ -19,7 +19,12 @@ const SuggestionsSelect = ({ category, suggestions, selectedSuggestions, onSelec
                     {suggestion}
                 </div>
             ))}
-        </div>
+            {links && <div>
+                {links.map((link) => (
+                    <a href={`${link.url}`} > {link.title}</a>
+                ))}
+            </div>}
+        </div >
     );
 }
 
