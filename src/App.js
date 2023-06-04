@@ -7,7 +7,7 @@ import data from './data.json';
 import { useState } from 'react';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [selected, setSelected] = useState([]);
   const [selectedWithCategory, setSelectedWithCategory] = useState({});
   const [page, setPage] = useState('');
