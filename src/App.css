@@ -2,7 +2,7 @@
 :root {
   --font-size: 16px;
   --font-family: 'Lora', sans-serif;
-  --font-1: 700 2.5rem var(--font-family);
+  --font-1: 700 2.2rem var(--font-family);
   --font-2: 400 2rem var(--font-family);
   --font-3-bold: 700 1.5rem var(--font-family);
   --font-3: 200 1.5rem var(--font-family);
@@ -34,6 +34,7 @@
 
 html {
   font-size: var(--font-size);
+  overflow-x: hidden;
 }
 
 [data-theme="dark"] {
