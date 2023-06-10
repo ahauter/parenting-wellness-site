@@ -70,6 +70,7 @@ export default function CategorySelect({ categoryData, onSelect, size }) {
                 style={{
                     height: size / 4,
                     width: size / 4,
+                    padding: size / 30
                 }}
                 onClick={() => handleSelect(SHOW_ALL_CATEGORIES)}
             >
