@@ -1,5 +1,9 @@
 import React from "react";
-import { Page, Text, View, Document, PDFDownloadLink, Font } from '@react-pdf/renderer';
+import {
+    Page,
+    Text,
+    View, Document, PDFDownloadLink, Font
+} from '@react-pdf/renderer';
 import styles from './styles.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from '../../icons';
@@ -14,6 +18,11 @@ export default function ViewSelectionsPage({ selections, categoryData, onBack })
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Your Wellness Selections</h1>
+            <div className={styles.linkContainer}>
+                <PDFDownloadLink className={styles.link} document={<ViewSelectionsPDF selections={selections} />} fileName="wellnessTips.pdf">
+                    Click here to download your selections
+                </PDFDownloadLink>
+            </div>
             <div
                 className={styles.description}>
                 Based on your selections, here is a list of incremental changes
@@ -48,22 +57,17 @@ export default function ViewSelectionsPage({ selections, categoryData, onBack })
                 {!showSelections && <h2>You have not selected any items yet</h2>}
                 {!showSelections && <button onClick={onBack}>Go Back</button>}
             </div>
-            <div>
-                {false &&
-                    <PDFDownloadLink document={<ViewSelectionsPDF selections={[]} />} fileName="wellnessTips.pdf">
-                        Click here to download your selections
-                    </PDFDownloadLink>
-                }
-            </div>
         </div >
     );
 }
 
-export function ViewSelectionsPDF({ selectionsWithCategories, selections }) {
+export function ViewSelectionsPDF({ selections }) {
     /*
     TODO finish that there styles 
     We want bullets for each selection
     */
+    const categories = Object.keys(selections);
+
     Font.register({ family: 'Lora', src: 'https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf' });
     return <Document>
         <Page size="LETTER">
@@ -75,24 +79,43 @@ export function ViewSelectionsPDF({ selectionsWithCategories, selections }) {
                     style={{
                         fontSize: 20,
                         marginBottom: 10,
-                        fontFamily: 'Lora'
+                        fontFamily: 'Lora',
+                        padding: 10
                     }}>
-                    Here are a list of incremental changes that will may be helpful in improving your mental wellness
+                    List of incremental changes that for mental wellness
                 </Text>
             </View>
             <View>
-                {selections.map((selection) => (
-                    <Text
-                        style={{
-                            fontSize: 12,
-                            marginBottom: 10,
-                            marginRight: 10,
-                            fontFamily: 'Lora'
-                        }}
-                        key={selection.id}>
-                        {selection}
-                    </Text>
-                ))}
+                {categories.map((category) => {
+                    const selected = selections[category];
+                    return <View>
+                        <Text
+                            style={{
+                                fontSize: 20,
+                                marginBottom: 10,
+                                fontFamily: 'Lora',
+                                padding: 10,
+                                color: selections[category].color,
+                                textDecoration: 'underline'
+                            }}
+                        >
+                            {category}
+                        </Text>
+                        {selected.map(selection => {
+                            return <Text
+                                style={{
+                                    fontSize: 12,
+                                    marginBottom: 10,
+                                    marginRight: 10,
+                                    fontFamily: 'Lora',
+                                    padding: 10,
+                                }}
+                                key={selection}>
+                                {selection}
+                            </Text>
+                        })}
+                    </View>
+                })}
             </View>
         </Page>
     </Document>

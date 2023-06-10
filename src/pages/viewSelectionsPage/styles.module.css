@@ -21,10 +21,14 @@
     list-style-type: disc;
     margin-left: 2rem;
     margin-top: 0.5rem;
-    padding-left: 1rem;
     font: var(--font-3);
-    color: var(--secondary-text-color);
+    color: var(--text-color);
     text-align: left;
+    padding: 1rem;
+}
+
+.selectionList li {
+    margin-bottom: 0.5rem;
 }
 
 .description {
@@ -35,4 +39,19 @@
 
 .contentContainer {
     margin-top: 1rem;
+}
+
+.link {
+    padding: 1rem;
+    font: var(--font-3);
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.linkContainer {
+    margin-bottom: 1rem;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
