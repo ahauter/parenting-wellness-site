@@ -85,6 +85,7 @@ function App() {
           selectedSuggestions={selected}
           onSelect={onSelect}
           getCategoryColor={getCategoryColor}
+          links={data[page].links}
         />
       }
       {showAllSelections &&

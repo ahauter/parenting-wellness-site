@@ -63,7 +63,21 @@
             "Try a body scan meditation (notice the sensations in your body, starting from your toes and traveling up to your head)",
             "Try the 5-4-3-2-1 grounding technique (acknowledging five things you can see around you, four things you can touch, three things you can hear, two things you can smell, and one thing you can taste)"
         ],
-        "color": "#A64D78"
+        "color": "#A64D78",
+        "links": [
+            {
+                "title": "Insight Timer",
+                "url": "https://insighttimer.com/"
+            },
+            {
+                "title": "Calm",
+                "url": "https://www.calm.com/"
+            },
+            {
+                "title": "Headspace",
+                "url": "https://www.headspace.com/"
+            }
+        ]
     },
     "Seeking Social Support": {
         "title": "Support",
