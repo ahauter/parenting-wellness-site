@@ -19,9 +19,16 @@ const SuggestionsSelect = ({ category, suggestions, links, selectedSuggestions, 
                     {suggestion}
                 </div>
             ))}
-            {links && <div>
+            {links && <div className={styles.linkContainer}>
+                <div
+                    className={styles.linkHeader}>Resources for <span>{category}</span>:</div>
                 {links.map((link) => (
-                    <a href={`${link.url}`} > {link.title}</a>
+                    <div>
+                        <a
+                            className={styles.link}
+                            href={`${link.url}`} > {link.title}
+                        </a>
+                    </div>
                 ))}
             </div>}
         </div >

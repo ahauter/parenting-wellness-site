@@ -27,7 +27,7 @@
 .suggestion {
     cursor: pointer;
     padding: 0.5rem;
-    font: var(--font-2);
+    font: var(--font-3);
     padding: 1rem;
     color: var(--text-color);
     border-radius: 1rem;
@@ -40,4 +40,32 @@
 .selected {
     background-color: var(--color-tertiary);
     color: #000;
+}
+
+.linkContainer {
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--background-color);
+}
+
+.linkHeader {
+    font: var(--font-3);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.linkHeader span {
+    text-transform: lowercase;
+}
+
+.link {
+    font: var(--font-3);
+    font-size: 1.3rem;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
