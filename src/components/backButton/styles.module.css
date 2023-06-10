@@ -1,5 +1,5 @@
 .backButton {
-    color: var(--text-color);
+    color: white;
     font: var(--font-3);
     margin: 2rem;
     cursor: pointer;

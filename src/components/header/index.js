@@ -11,7 +11,7 @@ export default function Header({ onBack, darkMode, setDarkMode, categories, onSe
             <div className={styles.header}>
                 <div className={styles.titleContainer}>
                     {showBack && <BackButton onBack={onBack} />}
-                    <div className={styles.title}>Wellness for Parents</div>
+                    <div className={styles.title}>Wellness for Parents of Children with Disabilities</div>
                 </div>
                 <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
 

@@ -28,7 +28,7 @@
 }
 
 .description {
-    font: var(--font-3);
+    font: var(--font-2);
     color: var(--text-color);
     text-align: left;
 }

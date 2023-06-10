@@ -10,7 +10,7 @@
 
 .toggle_text {
     font: var(--font-3-bold);
-    color: var(--text-color);
+    color: white;
     padding: 0.5rem;
 }
 

@@ -63,13 +63,6 @@ function App() {
       />
       {!showCategory && !showAllSelections &&
         <>
-          <div className="mentalHealthMatters">Parents of children with disabilities - why your mental wellness matters</div>
-          <div className="mental-health-blurb">
-            Parents of children with disabilities often <b>experience greater caregiving challenges</b> & <b>higher stress</b> than parents of typically developing children. <b>Positive mental health</b> in parents is associated with <b>improved development</b> & <b>wellbeing in children</b>. It is important to address <b>your mental health</b> for your own wellbeing and so you are better able to support your child.
-
-            <b> Taking small steps can have large impacts.</b>
-            <br />
-          </div>
           <div className="welcome">
             Select an area of difficulty on the wellness wheel to see suggestions of incremental changes that may help improve your mental wellness:
             <br />
@@ -101,6 +94,13 @@ function App() {
           onBack={onBack}
         />
       }
+      {!showCategory && !showAllSelections &&
+        <div className="mental-health-blurb">
+          Parents of children with disabilities often <b>experience greater caregiving challenges</b> & <b>higher stress</b> than parents of typically developing children. <b>Positive mental health</b> in parents is associated with <b>improved development</b> & <b>wellbeing in children</b>. It is important to address <b>your mental health</b> for your own wellbeing and so you are better able to support your child.
+
+          <b> Taking small steps can have large impacts.</b>
+          <br />
+        </div>}
     </div>
   );
 }
