@@ -83,3 +83,19 @@ html {
   color: var(--text-color);
   margin: 2rem;
 }
+
+.paperLinkHeader {
+  font: var(--font-3);
+  color: var(--text-color);
+  margin: 2rem;
+}
+
+.paperLink {
+  font: var(--font-3-bold);
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.paperLink:hover {
+  text-decoration: underline;
+}

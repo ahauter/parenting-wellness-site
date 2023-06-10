@@ -5,6 +5,7 @@ import CategorySelect, { SHOW_ALL_CATEGORIES } from './components/categorySelect
 import ViewSelectionsPage from './pages/viewSelectionsPage';
 import data from './data.json';
 import { useState } from 'react';
+import paper from './Research Paper.pdf'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -102,7 +103,15 @@ function App() {
           <b> Taking small steps can have large impacts.</b>
           <br />
         </div>}
+      <div className="paperLinkHeader">
+        For more information, please see the <br />
+        <a href={paper} target="_blank"
+          className="paperLink">
+          Research Evidence Article
+        </a>
+      </div>
     </div>
+
   );
 }
 
