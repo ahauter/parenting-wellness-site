@@ -1,10 +1,10 @@
 .toggle {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 4rem;
+    height: 2.2rem;
     border-radius: 40%;
-    background-color: var(--background-color-dark);
+    background-color: var(--background-color);
     cursor: pointer;
 }
 
@@ -18,22 +18,22 @@
     position: absolute;
     top: 2px;
     left: 2px;
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
-    background-color: var(--background-color);
+    background-color: var(--background-color-dark);
     transition: all 0.2s ease-in-out;
 }
 
 .toggle_thumb_right {
-    transform: translate(26px, 0);
+    transform: translate(1.8rem, 0);
 }
 
 .toggle_icon {
-    color: var(--background-color-dark);
+    color: var(--background-color);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 1rem;
 }
