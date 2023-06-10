@@ -105,8 +105,11 @@ function App() {
         </div>}
       <div className="paperLinkHeader">
         For more information, please see the <br />
-        <a href={paper} target="_blank"
-          className="paperLink">
+        <a href={paper}
+          target="_blank"
+          className="paperLink"
+          rel="noreferrer"
+        >
           Research Evidence Article
         </a>
       </div>
