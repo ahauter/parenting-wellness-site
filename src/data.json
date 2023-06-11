@@ -3,12 +3,12 @@
         "title": "Sleep",
         "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
         "suggestions": [
-            "Create a nightly wind down routine (such as taking a warm bath, drinking caffeine-free tea, dimming the lights, or reading a book)",
-            "Keep a consistent sleep schedule ",
+            "Create a consistent nightly wind down routine (such as taking a warm bath, drinking caffeine-free tea, dimming the lights, or reading a book)",
+            "Keep a consistent sleep schedule throughout the week",
             "Leave the bedroom and do something relaxing if unable to fall asleep after more than 30 minutes of laying in bed",
             "Avoid caffeine six hours before going to sleep",
             "Reduce use of electronics one hour before going to bed",
-            "Try a white noise app or machine",
+            "Try a white noise app or machine to maintain a quiet atmosphere when sleeping",
             "Sleep in a dark space"
         ],
         "color": "FFC107"
@@ -19,9 +19,9 @@
         "suggestions": [
             "Use smaller bowls and spoons when eating foods that are high in processed sugar",
             "Consume the skin when eating fruits and vegetables to increase your intake of fiber",
-            "Drink at least one glass of water each time you complete a daily habit, such as eating a meal or leaving the restroom",
-            "Make extra food for leftovers",
-            "Pack a lunch ahead of time",
+            "Make drinking water a habit; try drinking at least one glass of water each time you complete a daily activity, such as eating a meal or leaving the restroom",
+            "Pack a lunch ahead of time because you are more likely to make nutritious choices when you are not excessively hungry",
+            "When cooking, make extra food for leftovers",
             "Limit alcohol and drug consumption"
         ],
         "color": "#93C47D"
@@ -30,12 +30,12 @@
         "title": "Movement",
         "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
         "suggestions": [
-            "Schedule exercise ahead of time",
-            "Take the stairs when possible",
-            "Stretch while watching television",
-            "Play outside with your children",
-            "Take walks during lunch breaks",
-            "Complete errands by foot or bicycle"
+            "Schedule exercise ahead of time to make movement a priority",
+            "Take the stairs when possible to incorporate exercise into daily tasks",
+            "Stretch while watching television to increase physical movement during leisure activities ",
+            "Complete errands by foot or bicycle",
+            "Take walks during lunch breaks to ensure you get fresh air during your day",
+            "Play outside with your children"
         ],
         "color": "#5891AD"
     },
@@ -43,7 +43,7 @@
         "title": "Time",
         "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
         "suggestions": [
-            "Schedule time for breaks, unexpected events, or just being with your child",
+            "Schedule time for breaks, unexpected events, or “just being” with your child",
             "Make a to-do list in order of your most immediate priorities",
             "Create a to-don’t list of things that can be addressed later on",
             "Utilize a virtual calendar app that is shareable between family members",
@@ -71,8 +71,8 @@
         "suggestions": [
             "Join a Facebook group for parents that share your child’s diagnosis",
             "Regularly schedule time to speak with a trusted loved one",
-            "Join a support group (Directory of groups for parents of children with disabilities: https://www.cde.ca.gov/sp/se/qa/caprntorg.asp)",
-            "Make an appointment with a psychologist/psychiatrist (Directory of psychologist/psychiatrist: https://www.psychologytoday.com/us"
+            "Join a support group for parents of children with disabilities using the link below",
+            "Make an appointment with a psychologist/psychiatrist using the link below"
         ],
         "color": "#4CAF50"
     }
