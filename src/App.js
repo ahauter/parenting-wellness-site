@@ -5,9 +5,11 @@ import CategorySelect, { SHOW_ALL_CATEGORIES } from './components/categorySelect
 import ViewSelectionsPage from './pages/viewSelectionsPage';
 import data from './data.json';
 import { useState } from 'react';
+import useWindowSize from './hooks/windowSize';
 import paper from './Research Paper.pdf'
 
 function App() {
+  const screenWidth = useWindowSize();
   const [darkMode, setDarkMode] = useState(false);
   const [selected, setSelected] = useState([]);
   const [selectedWithCategory, setSelectedWithCategory] = useState({});
@@ -75,7 +77,7 @@ function App() {
         categoryData={data}
         onSelect={onPageSelect}
         getCategoryColor={getCategoryColor}
-        size={page.length ? 200 : 400}
+        size={Math.min(page.length ? 250 : 400, screenWidth - 40)}
       />
       {showCategory &&
         <SuggestionsSelectPage
@@ -98,8 +100,14 @@ function App() {
       }
       {!showCategory && !showAllSelections &&
         <div className="mental-health-blurb">
-          Parents of children with disabilities often <b>experience greater caregiving challenges</b> & <b>higher stress</b> than parents of typically developing children. <b>Positive mental health</b> in parents is associated with <b>improved development</b> & <b>wellbeing in children</b>. It is important to address <b>your mental health</b> for your own wellbeing and so you are better able to support your child.
-
+          Parents of children with disabilities often
+          <b>experience greater caregiving challenges</b> &
+          <b>higher stress</b>
+          than parents of typically developing children.
+          <b>Positive mental health</b> in parents is associated with
+          <b>improved development</b> & <b>wellbeing in children</b>.
+          It is important to address <b>your mental health</b>
+          for your own wellbeing and so you are better able to support your child.
           <b> Taking small steps can have large impacts.</b>
           <br />
         </div>}
@@ -111,6 +119,12 @@ function App() {
           rel="noreferrer"
         >
           Research Evidence Article
+        </a>
+        <br />
+        <br />
+        Please contact us if you have any questions or feedback at <br />
+        <a href="mailto:wellnessforparents@gmail.com">
+          wellnessforparents@gmail.com
         </a>
       </div>
     </div>
