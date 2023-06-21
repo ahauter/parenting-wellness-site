@@ -68,6 +68,11 @@ html {
   margin: 2rem;
 }
 
+.welcomeSubheader {
+  font: var(--font-3);
+  color: var(--text-color);
+}
+
 .mental-health-blurb {
   font: var(--font-3);
   color: var(--text-color);
