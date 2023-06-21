@@ -70,12 +70,12 @@ function App() {
             Select an area of difficulty on the wellness wheel to see suggestions of incremental changes that may help improve your mental wellness:
             <br />
             <br />
-            <div className="welcomeSubheader">
-              Click the wheel to explore wellness categories!
-            </div>
           </div>
         </>
       }
+      <div className="welcomeSubheader">
+        Click the wheel to explore {page.length ? "other" : ""} wellness categories!
+      </div>
       <CategorySelect
         categoryData={data}
         onSelect={onPageSelect}

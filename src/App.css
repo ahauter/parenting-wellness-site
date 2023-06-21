@@ -71,6 +71,7 @@ html {
 .welcomeSubheader {
   font: var(--font-3);
   color: var(--text-color);
+  margin: 2rem;
 }
 
 .mental-health-blurb {
