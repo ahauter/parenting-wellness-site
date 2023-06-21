@@ -101,12 +101,12 @@ function App() {
       {!showCategory && !showAllSelections &&
         <div className="mental-health-blurb">
           Parents of children with disabilities often
-          <b>experience greater caregiving challenges</b> &
-          <b>higher stress</b>
+          <b> experience greater caregiving challenges</b> &
+          <b> higher stress </b>
           than parents of typically developing children.
-          <b>Positive mental health</b> in parents is associated with
-          <b>improved development</b> & <b>wellbeing in children</b>.
-          It is important to address <b>your mental health</b>
+          <b> Positive mental health</b> in parents is associated with
+          <b> improved development</b> & <b>wellbeing in children</b>.
+          It is important to address <b>your mental health </b>
           for your own wellbeing and so you are better able to support your child.
           <b> Taking small steps can have large impacts.</b>
           <br />
