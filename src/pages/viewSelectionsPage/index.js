@@ -23,11 +23,11 @@ export default function ViewSelectionsPage({ selections, categoryData, onBack })
                     Click here to download your selections
                 </PDFDownloadLink>
             </div>
-            <div
+            {showSelections && <div
                 className={styles.description}>
                 Based on your selections, here is a list of incremental changes
                 that may be helpful in improving your mental wellness:
-            </div>
+            </div>}
             <div className={styles.contentContainer}>
                 {showSelections && <div>
                     {categories.map((category) => (
@@ -54,8 +54,15 @@ export default function ViewSelectionsPage({ selections, categoryData, onBack })
                             }
                         </>))}
                 </div>}
-                {!showSelections && <h2>You have not selected any items yet</h2>}
-                {!showSelections && <button onClick={onBack}>Go Back</button>}
+                {!showSelections &&
+                    <h2 className={styles.noSelection}>You have not selected any items yet</h2>}
+                {!showSelections &&
+                    <button
+                        className={styles.goBackButton}
+                        onClick={onBack}>
+                        Go Back
+                    </button>
+                }
             </div>
         </div >
     );

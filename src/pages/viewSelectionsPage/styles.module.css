@@ -3,6 +3,7 @@
     background-color: var(--background-color-secondary);
     border-radius: 1rem;
     padding: 1rem;
+    min-width: 60vw;
 }
 
 .title {
@@ -54,4 +55,29 @@
 
 .link:hover {
     text-decoration: underline;
+}
+
+.noSelection {
+    font: var(--font-1);
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.goBackButton {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: var(--background-color-secondary);
+    font: var(--font-3);
+    color: var(--text-color);
+    text-decoration: none;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 0.5rem;
+}
+
+.goBackButton:hover {
+    background-color: var(--background-color);
+    color: var(--secondary-text-color);
+    border: 1px solid var(--text-color);
+    transition: 0.2s;
 }
