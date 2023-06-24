@@ -106,3 +106,35 @@ html {
 .paperLink:hover {
   text-decoration: underline;
 }
+
+.incrementButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 2rem;
+}
+
+.incrementButton {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  font: var(--font-3);
+  color: var(--text-color);
+  background-color: var(--background-color-secondary);
+  border: 1px solid var(--color-tertiary);
+  border-radius: 10rem;
+}
+
+.incrementButton:hover {
+  background-color: var(--color-secondary);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.incButtonArrow {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
