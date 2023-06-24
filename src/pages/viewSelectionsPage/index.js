@@ -21,26 +21,28 @@ export default function ViewSelectionsPage({
             .filter(sel => sel && sel.length > 0).length > 0;
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Your Wellness Selections</h1>
-            <div className={styles.linkContainer}>
-                <PDFDownloadLink
-                    className={styles.link}
-                    document={
-                        <ViewSelectionsPDF
-                            selections={selections}
-                            categoryData={categoryData}
-                        />
-                    }
-                    fileName="wellnessTips.pdf"
-                >
-                    Click here to download your selections
-                </PDFDownloadLink>
-            </div>
-            {showSelections && <div
-                className={styles.description}>
-                Based on your selections, here is a list of incremental changes
-                that may be helpful in improving your mental wellness:
-            </div>}
+            {showSelections && <>
+                <h1 className={styles.title}>Your Wellness Selections</h1>
+                <div className={styles.linkContainer}>
+                    <PDFDownloadLink
+                        className={styles.link}
+                        document={
+                            <ViewSelectionsPDF
+                                selections={selections}
+                                categoryData={categoryData}
+                            />
+                        }
+                        fileName="wellnessTips.pdf"
+                    >
+                        Click here to download your selections
+                    </PDFDownloadLink>
+                </div>
+                <div
+                    className={styles.description}>
+                    Based on your selections, here is a list of incremental changes
+                    that may be helpful in improving your mental wellness:
+                </div>
+            </>}
             <div className={styles.contentContainer}>
                 {showSelections && <div>
                     {categories.map((category) => (
