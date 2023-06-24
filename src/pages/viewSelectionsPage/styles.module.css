@@ -22,7 +22,7 @@
     list-style-type: disc;
     margin-left: 2rem;
     margin-top: 0.5rem;
-    font: var(--font-3);
+    font: var(--font-2);
     color: var(--text-color);
     text-align: left;
     padding: 1rem;
@@ -33,7 +33,7 @@
 }
 
 .description {
-    font: var(--font-2);
+    font: var(--font-3);
     color: var(--text-color);
     text-align: left;
 }
