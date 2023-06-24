@@ -36,15 +36,6 @@ export default function ViewSelectionsPage({
                 >
                     Click here to download your selections
                 </PDFDownloadLink>
-                <PDFViewer style={{
-                    width: '100%',
-                    height: '100vh',
-                }}>
-                    <ViewSelectionsPDF
-                        selections={selections}
-                        categoryData={categoryData}
-                    />
-                </PDFViewer>
             </div>
             {showSelections && <div
                 className={styles.description}>
