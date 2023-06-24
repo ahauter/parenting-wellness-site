@@ -3,7 +3,6 @@ import {
     Page,
     Text,
     View, Document, PDFDownloadLink, Font,
-    PDFViewer
 } from '@react-pdf/renderer';
 import styles from './styles.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
