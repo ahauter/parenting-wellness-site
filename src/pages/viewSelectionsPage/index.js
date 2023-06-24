@@ -2,14 +2,19 @@ import React from "react";
 import {
     Page,
     Text,
-    View, Document, PDFDownloadLink, Font
+    View, Document, PDFDownloadLink, Font,
+    PDFViewer
 } from '@react-pdf/renderer';
 import styles from './styles.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from '../../icons';
 
 
-export default function ViewSelectionsPage({ selections, categoryData, onBack }) {
+export default function ViewSelectionsPage({
+    selections,
+    categoryData,
+    onBack
+}) {
     const categories = Object.keys(categoryData);
     // show selections if at least one category has selections
     const showSelections = selections &&
@@ -19,9 +24,27 @@ export default function ViewSelectionsPage({ selections, categoryData, onBack })
         <div className={styles.container}>
             <h1 className={styles.title}>Your Wellness Selections</h1>
             <div className={styles.linkContainer}>
-                <PDFDownloadLink className={styles.link} document={<ViewSelectionsPDF selections={selections} />} fileName="wellnessTips.pdf">
+                <PDFDownloadLink
+                    className={styles.link}
+                    document={
+                        <ViewSelectionsPDF
+                            selections={selections}
+                            categoryData={categoryData}
+                        />
+                    }
+                    fileName="wellnessTips.pdf"
+                >
                     Click here to download your selections
                 </PDFDownloadLink>
+                <PDFViewer style={{
+                    width: '100%',
+                    height: '100vh',
+                }}>
+                    <ViewSelectionsPDF
+                        selections={selections}
+                        categoryData={categoryData}
+                    />
+                </PDFViewer>
             </div>
             {showSelections && <div
                 className={styles.description}>
@@ -68,62 +91,76 @@ export default function ViewSelectionsPage({ selections, categoryData, onBack })
     );
 }
 
-export function ViewSelectionsPDF({ selections }) {
+export function ViewSelectionsPDF({ selections, categoryData }) {
     /*
     TODO finish that there styles 
     We want bullets for each selection
     */
     const categories = Object.keys(selections);
 
-    Font.register({ family: 'Lora', src: 'https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf' });
+    Font.register({
+        family: 'Lora',
+        src: 'https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf'
+    });
     return <Document>
         <Page size="LETTER">
             <View style={{
                 flexDirection: 'row',
-                justifyContent: 'space-between',
+                justifyContent: 'center',
             }}>
                 <Text
                     style={{
-                        fontSize: 20,
-                        marginBottom: 10,
+                        fontSize: 25,
+                        margin: 10,
                         fontFamily: 'Lora',
-                        padding: 10
+                        padding: 10,
+                        textDecoration: 'underline'
                     }}>
-                    List of incremental changes that for mental wellness
+                    Incremental changes for mental wellness
                 </Text>
             </View>
             <View>
                 {categories.map((category) => {
                     const selected = selections[category];
                     return <View>
-                        <Text
+                        <View
                             style={{
-                                fontSize: 20,
-                                marginBottom: 10,
-                                fontFamily: 'Lora',
-                                padding: 10,
-                                color: selections[category].color,
-                                textDecoration: 'underline'
+                                justifyContent: 'center',
+                                alignItems: 'center',
                             }}
                         >
-                            {category}
-                        </Text>
-                        {selected.map(selection => {
-                            return <Text
+                            <Text
                                 style={{
-                                    fontSize: 12,
+                                    fontSize: 20,
                                     marginBottom: 10,
-                                    marginRight: 10,
                                     fontFamily: 'Lora',
                                     padding: 10,
+                                    color: `${categoryData[category].color}`,
+                                    textDecoration: 'underline'
                                 }}
-                                key={selection}>
-                                {selection}
+                            >
+                                {category}
                             </Text>
-                        })}
+                        </View>
+                        {
+                            selected.map(selection => {
+                                return <Text
+                                    style={{
+                                        fontSize: 12,
+                                        marginBottom: 10,
+                                        marginRight: 30,
+                                        marginLeft: 30,
+                                        fontFamily: 'Lora',
+                                        padding: 10,
+                                    }}
+                                    key={selection}>
+                                    • {selection}
+                                </Text>
+                            })
+                        }
                     </View>
                 })}
             </View>
         </Page>
-    </Document>
+    </Document >
 }
