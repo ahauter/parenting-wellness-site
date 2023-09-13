@@ -118,9 +118,15 @@ html {
 }
 
 .incrementButton {
+  display: flex;
+  flex-direction: row;
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 1rem;
+  height: 4rem;
+  align-items: center;
+  width: 10rem;
+  justify-content: center;
   font: var(--font-3);
   color: var(--text-color);
   background-color: var(--background-color-secondary);
