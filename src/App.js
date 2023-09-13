@@ -141,6 +141,9 @@ function App() {
             />
             Previous
           </div>
+          <div className='incrementButton' onClick={() => setPage(SHOW_ALL_CATEGORIES)}>
+            See your selections
+          </div>
           <div className="incrementButton" onClick={() => onNextOrPrevious(true)}>
             Next
             <FontAwesomeIcon
