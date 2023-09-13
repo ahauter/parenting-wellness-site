@@ -97,7 +97,7 @@ function App() {
         categoryData={data}
         onSelect={onPageSelect}
         getCategoryColor={getCategoryColor}
-        size={Math.min(page.length ? 250 : 400, screenWidth - 40)}
+        size={Math.min(page.length ? 300 : 400, screenWidth - 40)}
       />
       {showCategory &&
         <SuggestionsSelectPage
