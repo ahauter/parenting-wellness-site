@@ -34,7 +34,7 @@ export default function ViewSelectionsPage({
                         }
                         fileName="wellnessTips.pdf"
                     >
-                        Click here to download your selections
+                        Click here to download a printable version of your selections
                     </PDFDownloadLink>
                 </div>
                 <div
