@@ -65,13 +65,14 @@ html {
   font: var(--font-2);
   font-weight: 800;
   color: var(--text-color);
-  margin: 2rem;
+  margin: 1rem;
+  margin-bottom: 0;
 }
 
 .welcomeSubheader {
-  font: var(--font-3);
+  font: var(--font-3-bold);
   color: var(--text-color);
-  margin: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mental-health-blurb {
