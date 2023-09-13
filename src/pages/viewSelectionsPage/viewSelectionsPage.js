@@ -89,7 +89,6 @@ export function ViewSelectionsPDF({ selections, categoryData }) {
     We want bullets for each selection
     */
     const categories = Object.keys(selections);
-
     Font.register({
         family: 'Lora',
         src: 'https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf'
@@ -114,6 +113,8 @@ export function ViewSelectionsPDF({ selections, categoryData }) {
             <View>
                 {categories.map((category) => {
                     const selected = selections[category];
+                    const links = categoryData[category].links;
+                    console.log("links", links);
                     return <View>
                         <View
                             style={{
@@ -139,16 +140,45 @@ export function ViewSelectionsPDF({ selections, categoryData }) {
                                 return <Text
                                     style={{
                                         fontSize: 12,
-                                        marginBottom: 10,
                                         marginRight: 30,
                                         marginLeft: 30,
                                         fontFamily: 'Lora',
-                                        padding: 10,
+                                        textDecoration: 'underline'
                                     }}
                                     key={selection}>
                                     • {selection}
                                 </Text>
                             })
+                        }
+                        {
+                            (links && links.length > 0) && <View>
+                                <Text
+                                    style={{
+                                        fontSize: 12,
+                                        marginBottom: 10,
+                                        marginRight: 30,
+                                        marginLeft: 30,
+                                        fontFamily: 'Lora',
+                                    }}
+                                >
+                                    Resources:
+                                </Text>
+                                {
+                                    links.map(link => {
+                                        return <Text
+                                            style={{
+                                                fontSize: 12,
+                                                marginRight: 30,
+                                                marginLeft: 30,
+                                                fontFamily: 'Lora',
+                                            }}
+                                            key={link}
+                                        >
+                                            • {link.title}: {link.url}
+                                        </Text>
+                                    })
+                                }
+                            </View>
                         }
                     </View>
                 })}
