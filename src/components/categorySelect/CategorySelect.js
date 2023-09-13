@@ -50,7 +50,7 @@ export default function CategorySelect({ categoryData, onSelect, size }) {
         } else {
             centerElem.style.backgroundImage = '';
         }
-    }, [mouseX, mouseY]);
+    }, [mouseX, mouseY, size]);
 
     //TODO make category text and icon appear in correct place
     return (
