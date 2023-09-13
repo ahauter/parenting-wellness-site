@@ -11,7 +11,17 @@
             "Try a white noise app or machine to maintain a quiet atmosphere when sleeping",
             "Sleep in a dark space"
         ],
-        "color": "#ffcc33"
+        "color": "#ffcc33",
+        "links": [
+            {
+                "title": "Sleep Foundation",
+                "url": "https://www.sleepfoundation.org/"
+            },
+            {
+                "title": "White Noise App",
+                "url": "https://www.tmsoft.com/white-noise/"
+            }
+        ]
     },
     "Maintaining Balanced Nutrition": {
         "title": "Nutrition",
@@ -49,7 +59,13 @@
             "Utilize a virtual calendar app that is shareable between family members",
             "Reach out for help when needed"
         ],
-        "color": "#8E7CC3"
+        "color": "#8E7CC3",
+        "links": [
+            {
+                "title": "Google Calendar",
+                "url": "https://calendar.google.com/calendar/u/0/r"
+            }
+        ]
     },
     "Practicing Mindfulness": {
         "title": "Mindfulness",
@@ -76,6 +92,10 @@
             {
                 "title": "Headspace",
                 "url": "https://www.headspace.com/"
+            },
+            {
+                "title": "Guided Body Scan Meditation",
+                "url": "https://www.youtube.com/watch?v=uqtIqCKjkuc"
             }
         ]
     },
@@ -88,6 +108,16 @@
             "Join a support group for parents of children with disabilities using the link below",
             "Make an appointment with a psychologist/psychiatrist using the link below"
         ],
-        "color": "#e6a25B"
+        "color": "#e6a25B",
+        "links": [
+            {
+                "title": "Directory of Support Groups",
+                "url": "https://www.cde.ca.gov/sp/se/qa/caprntorg.asp"
+            },
+            {
+                "title": "Directory of Psychologists and Psychiatrists",
+                "url": "https://www.psychologytoday.com/us"
+            }
+        ]
     }
 }
