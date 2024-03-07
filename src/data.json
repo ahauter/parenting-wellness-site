@@ -1,7 +1,7 @@
 {
     "Having Quality Sleep": {
         "title": "Sleep",
-        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
+        "description": "",
         "suggestions": [
             "Create a consistent nightly wind down routine (such as taking a warm bath, drinking caffeine-free tea, dimming the lights, or reading a book)",
             "Keep a consistent sleep schedule throughout the week",
@@ -25,7 +25,7 @@
     },
     "Maintaining Balanced Nutrition": {
         "title": "Nutrition",
-        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
+        "description": "",
         "suggestions": [
             "Use smaller bowls and spoons when eating foods that are high in processed sugar",
             "Consume the skin when eating fruits and vegetables to increase your intake of fiber",
@@ -38,7 +38,7 @@
     },
     "Engaging in Physical Movement & Getting Outside": {
         "title": "Movement",
-        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
+        "description": "",
         "suggestions": [
             "Schedule exercise ahead of time to make movement a priority",
             "Take the stairs when possible to incorporate exercise into daily tasks",
@@ -51,7 +51,7 @@
     },
     "Developing Time Management Techniques": {
         "title": "Time",
-        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
+        "description": "",
         "suggestions": [
             "Schedule time for breaks, unexpected events, or “just being” with your child",
             "Make a to-do list in order of your most immediate priorities",
@@ -69,7 +69,7 @@
     },
     "Practicing Mindfulness": {
         "title": "Mindfulness",
-        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
+        "description": "",
         "suggestions": [
             "Explore a mindfulness app such as Insight Timer, Calm, or Headspace",
             "Keep a journal to write about your experiences, thoughts, and sensations",
@@ -101,7 +101,7 @@
     },
     "Seeking Social Support": {
         "title": "Support",
-        "description": "Select which suggestions seem feasible for your lifestyle to generate a list of personalized wellness options:",
+        "description": "",
         "suggestions": [
             "Join a Facebook group for parents that share your child’s diagnosis",
             "Regularly schedule time to speak with a trusted loved one",
