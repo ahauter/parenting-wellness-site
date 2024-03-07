@@ -5,11 +5,12 @@ import { icons } from '../../icons';
 
 export const SHOW_ALL_CATEGORIES = 'all';
 
-export default function CategorySelect({ categoryData, onSelect, size }) {
+export default function CategorySelect({ categoryData, selectedCategory, onSelect, size }) {
   const handleSelect = (category) => {
     onSelect(category);
   };
-  const categories = Object.keys(categoryData);
+  let categories = Object.keys(categoryData);
+  const categoryOffset = Math.max(0, categories.indexOf(selectedCategory))
   size = size || 400;
   // TODO resize text based on size
   const fontSize = size / 20;
@@ -52,7 +53,6 @@ export default function CategorySelect({ categoryData, onSelect, size }) {
     }
   }, [mouseX, mouseY, size]);
 
-  //TODO make category text and icon appear in correct place
   return (
     <div className={styles.categoryContainer}
       style={{
@@ -62,6 +62,7 @@ export default function CategorySelect({ categoryData, onSelect, size }) {
     >
       <div className={styles.categoryTitle}>Select a Category</div>
       {categories.map((categoryName, i) => {
+        i = i - categoryOffset
         const category = categoryData[categoryName];
         const elemId = `text-display-${categoryName}`;
         const textRotation = -1 * (i * rotation);
@@ -88,6 +89,7 @@ export default function CategorySelect({ categoryData, onSelect, size }) {
                 style={{
                   transform: `rotate(${textRotation}deg)`,
                   fontSize: fontSize,
+                  transition: "0.5s"
                 }}>
                 {category.title}
                 <br />

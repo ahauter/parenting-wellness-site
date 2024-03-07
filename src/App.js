@@ -96,6 +96,7 @@ function App() {
       <CategorySelect
         categoryData={data}
         onSelect={onPageSelect}
+        selectedCategory={page}
         getCategoryColor={getCategoryColor}
         size={Math.min(page.length ? 400 : 400, screenWidth - 40)}
       />
