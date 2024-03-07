@@ -128,7 +128,7 @@ function App() {
           <b> Positive mental health</b> in parents is associated with
           <b> improved development</b> & <b>wellbeing in children</b>.
           It is important to address <b>your mental health </b>
-          for your own wellbeing & so you are better able to support your child.
+          both for yourself & so you are better able to support your child.
           <b> Taking small steps can have large impacts.</b>
           <br />
         </div>}
