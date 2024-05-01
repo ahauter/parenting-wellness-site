@@ -15,6 +15,7 @@
     color: var(--category-select-text-color);
     font: var(--font-2);
     border-radius: 50%;
+    transition: 0.5s;
 }
 
 .category:hover {
@@ -47,4 +48,5 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: 1s;
 }
